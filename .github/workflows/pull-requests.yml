@@ -27,3 +27,5 @@ jobs:
         command: validate
         arguments: -var="source_ami=${{ secrets.SOURCE_AMI }}"
         target: ami.json
+      env:
+        PACKER_LOG: 1
