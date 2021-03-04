@@ -25,6 +25,5 @@ jobs:
       uses: hashicorp/packer-github-actions@master
       with:
         command: validate
+        arguments: "-var 'source_ami=${{ secrets.SOURCE_AMI }}'"
         target: ami.json
-      env:
-        source_ami: ${{ secrets.SOURCE_AMI }}
