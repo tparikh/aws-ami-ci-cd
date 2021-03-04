@@ -5,8 +5,6 @@
 ```
 packer validate ami.json
 ```
-
-
 ## Packer Build
 ```
 packer build \
