@@ -26,3 +26,5 @@ jobs:
       with:
         command: validate
         target: ami.json
+      env:
+        source_ami: ${{ secrets.SOURCE_AMI }}

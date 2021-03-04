@@ -3,7 +3,7 @@
 ## Packer Validate
 
 ```
-packer validate ami.json
+packer validate -var 'source_ami=ami-02fe94dee086c0c37' ami.json
 ```
 ## Packer Build
 ```
