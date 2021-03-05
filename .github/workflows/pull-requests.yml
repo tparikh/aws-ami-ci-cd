@@ -4,7 +4,9 @@ name: Packer Validate on Pull Requests
 # Controls when the action will run.
 # Triggers the workflow on push or pull request events but only for the main branch
 on:
+  # Workflow is triggered on pull requests
   pull_request:
+    # Workflow will only be triggered for pull requests on "master" branch
     branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -25,7 +27,7 @@ jobs:
       uses: hashicorp/packer-github-actions@master
       with:
         command: validate
-        arguments: -syntax-only
+        arguments: -syntax-only # only validate syntax
         target: ami.json
       env:
-        PACKER_LOG: 1
+        PACKER_LOG: 1 # enable debug log for packer
