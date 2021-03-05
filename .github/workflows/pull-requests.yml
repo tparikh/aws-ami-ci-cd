@@ -28,6 +28,6 @@ jobs:
       with:
         command: validate
         arguments: -syntax-only # only validate syntax
-        target: ami.json
+        target: ami-filed-does-not-exist.json
       env:
         PACKER_LOG: 1 # enable debug log for packer
