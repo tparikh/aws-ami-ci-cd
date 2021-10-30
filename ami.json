@@ -16,7 +16,7 @@
         "subnet_id": "{{user `subnet_id`}}",
         "source_ami": "{{user `source_ami`}}",
         "ssh_username": "{{user `ssh_username`}}",
-        "ami_name": "csye6225_{{timestamp}}",
+        "ami_name": "csye6225_fall_2021_{{timestamp}}",
         "ami_description": "Ubuntu AMI for CSYE 6225",
         "launch_block_device_mappings": [{
             "device_name": "/dev/sda1",
